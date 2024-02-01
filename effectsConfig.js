@@ -481,7 +481,7 @@ export const effectsList = {
           { name: "earrings_01.zip", icon: "earrings_01.png" },
           { name: "necklace_01.zip", icon: "necklace_01.png" },
           { name: "goldEaring.zip", icon: "earrings_01.png" },
-        ],fancy   },
+        ]},
       makeup: {
         label: "Makeup",
         effects: [{ name: "Low_look_clubs.zip" }],
