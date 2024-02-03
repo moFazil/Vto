@@ -1,4 +1,39 @@
 export const effectsList = {
+  virtual_try_on: {
+    label: "Virtual Try On",
+    categories: {
+      glasses_try_on: {
+        label: "Glasses Try On",
+        effects: [
+          { name: "glasses_RayBan4165_Dark.zip", icon: "Glasses_Dark.png" },
+        ],
+      },
+      // hair: {
+      //   label: "Hair Coloring",
+      //   effects: [
+      //     { name: "VTO_Hair_blue.zip", icon: "VTO_Hair_blue.png" },
+      //     { name: "VTO_Hair_green.zip", icon: "VTO_Hair_green.png" },
+      //     { name: "VTO_Hair_strand.zip", icon: "VTO_Hair_strand.png" },
+      //   ],
+      // },
+      // head_wearings: {
+      //   label: "Head wearings",
+      //   effects: [{ name: "VTO_Headdresse_01.zip" }],
+      // },
+      jewelry: {
+        label: "Jewelry",
+        effects: [
+          { name: "earrings_01.zip", icon: "earrings_01.png" },
+          { name: "necklace_01.zip", icon: "necklace_01.png" },
+          { name: "goldEaring.zip", icon: "earrings_01.png" },
+          { name: "Rigged ear rings.zip", icon: "earrings_01.png" },
+        ]},
+      // makeup: {
+      //   label: "Makeup",
+      //   effects: [{ name: "Low_look_clubs.zip" }],
+      // },
+    },
+  },
   // ar_games: {
   //   label: "AR Games",
   //   categories: {
@@ -451,43 +486,6 @@ export const effectsList = {
   //     },
   //   },
   // },
-
-  virtual_try_on: {
-    label: "Virtual Try On",
-    categories: {
-      glasses_try_on: {
-        label: "Glasses Try On",
-        effects: [
-          { name: "glasses_RayBan4165_Dark.zip", icon: "Glasses_Dark.png" },
-        ],
-      },
-      // hair: {
-      //   label: "Hair Coloring",
-      //   effects: [
-      //     { name: "VTO_Hair_blue.zip", icon: "VTO_Hair_blue.png" },
-      //     { name: "VTO_Hair_green.zip", icon: "VTO_Hair_green.png" },
-      //     { name: "VTO_Hair_strand.zip", icon: "VTO_Hair_strand.png" },
-      //   ],
-      // },
-      // head_wearings: {
-      //   label: "Head wearings",
-      //   effects: [{ name: "VTO_Headdresse_01.zip" }],
-      // },
-      jewelry: {
-        label: "Jewelry",
-        effects: [
-          { name: "earrings_01.zip", icon: "earrings_01.png" },
-          { name: "necklace_01.zip", icon: "necklace_01.png" },
-          { name: "goldEaring.zip", icon: "earrings_01.png" },
-          { name: "Ear ring gold.zip", icon: "earrings_01.png" },
-        ]},
-      // makeup: {
-      //   label: "Makeup",
-      //   effects: [{ name: "Low_look_clubs.zip" }],
-      // },
-    },
-  },
-
   // import: {
   //   label: "Imported",
   //   effects: [],
