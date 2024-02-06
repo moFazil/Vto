@@ -6,6 +6,7 @@ export const effectsList = {
         label: "Glasses Try On",
         effects: [
           { name: "glasses_RayBan4165_Dark.zip", icon: "Glasses_Dark.png" },
+          { name: "Heart.zip", icon: "Glasses_Dark.png" },
         ],
       },
       // hair: {
@@ -23,8 +24,10 @@ export const effectsList = {
       jewelry: {
         label: "Jewelry",
         effects: [
-          { name: "earrings_01.zip", icon: "earrings_01.png" },
           { name: "necklace_01.zip", icon: "necklace_01.png" },
+          { name: "Chain.zip", icon: "necklace_01.png" },
+          { name: "Beads.zip", icon: "necklace_01.png" },
+          { name: "earrings_01.zip", icon: "earrings_01.png" },
           { name: "goldEaring.zip", icon: "earrings_01.png" },
           { name: "Rigged ear rings.zip", icon: "earrings_01.png" },
         ]},

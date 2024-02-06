@@ -91,7 +91,7 @@ canvas {
   z-index: 1;
 }
 
-.controls + input[type="image"] {
+.controls+input[type="image"] {
   cursor: pointer;
 }
 
@@ -189,7 +189,7 @@ input[type="radio"] {
   margin: 0;
 }
 
-input[name="tech"] + label {
+input[name="tech"]+label {
   font-size: 20px;
   font-weight: 700;
   line-height: 16px;
@@ -199,7 +199,8 @@ input[name="tech"] + label {
   cursor: pointer;
   padding: 10px 5px;
 }
-input[name="tech"]:checked + label {
+
+input[name="tech"]:checked+label {
   text-shadow: 0 0 1px black;
   display: flex;
   flex-direction: column;
@@ -208,7 +209,7 @@ input[name="tech"]:checked + label {
   cursor: default;
 }
 
-input[name="tech"]:checked + label:after {
+input[name="tech"]:checked+label:after {
   background: #191428;
   content: "";
   height: 2px;
@@ -284,7 +285,7 @@ input[name="tech"]:checked + label:after {
   text-align: center;
 }
 
-input[name="category"] + label {
+input[name="category"]+label {
   border: 1px solid transparent;
   border-radius: 60px;
   padding: 12px 20px;
@@ -292,7 +293,7 @@ input[name="category"] + label {
   white-space: nowrap;
 }
 
-input[name="category"]:checked + label {
+input[name="category"]:checked+label {
   border: 1px solid #191428;
   cursor: default;
 }
@@ -330,11 +331,11 @@ input[name="category"]:checked + label {
   width: 68px;
 }
 
-input[name="effect"] + .effect-icon__border {
+input[name="effect"]+.effect-icon__border {
   cursor: pointer;
 }
 
-input[name="effect"]:checked + .effect-icon__border {
+input[name="effect"]:checked+.effect-icon__border {
   border: 1.5px solid #fff;
   cursor: default;
 }
@@ -384,13 +385,11 @@ input[name="effect"]:checked + .effect-icon__border {
 }
 
 .effect-control__slider {
-  background: linear-gradient(
-    to right,
-    #4794fe 0%,
-    #4794fe 50%,
-    #eef2f7 50%,
-    #eef2f7 100%
-  );
+  background: linear-gradient(to right,
+      #4794fe 0%,
+      #4794fe 50%,
+      #eef2f7 50%,
+      #eef2f7 100%);
   border-radius: 30px;
   height: 4px;
   width: 100%;
@@ -549,6 +548,7 @@ input[name="effect"]:checked + .effect-icon__border {
 .popup__hidden {
   opacity: 0;
 }
+
 .popup__bold {
   margin-right: 8px;
   font-weight: 700;
@@ -671,7 +671,67 @@ input[name="effect"]:checked + .effect-icon__border {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width:250px) and (max-width:425px) {
+  #webar {
+    width: 100%;
+    height: 650px;
+    background-color: #000000;
+    border-radius: 30px;
+  }
+
+  main {
+    width: 98%;
+  }
+
+  #reset-button {
+    width: 30px;
+    left: 0;
+    margin-left: 10px;
+  }
+
+  .effects-list {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+  }
+
+  .effect-icon {
+    width: 30px;
+    height: 30px;
+    padding: 1px 0 0 1px;
+  }
+
+  .effect-icon__border {
+    height: 33px;
+    width: 32px;
+  }
+
+  .categories {
+    font-size: 11px;
+    height: 25px;
+  }
+
+  input[name="category"]+label {
+    padding: 5px 7px;
+  }
+
+  input[name="tech"]+label {
+    font-size: 15px;
+  }
+
+  canvas {
+    border-radius: 15px;
+  }
+
+  .start-screen {
+    width: 250px;
+    top: calc(45% - 115px);
+    left: calc(67% - 175px);
   }
 }
